@@ -22,6 +22,14 @@ you can run the below maven command to run the tests.
 ./mvnw test
 ```
 
+## HTTP Basic Authentication 
+The API has been configured for HTTP Basic Authentication you will need to provide a username and password on each request to the API.
+The username and password can be found in the application.properties file of the project. If you are using Postman for testing you can enter
+these credentials on the 'Authorization' tab of the request.
+
+![image](./images/postman_basic_auth.png)
+
+
 ## Creating a Form
 To create an Application form you will need to send a POST request to the below endpoint
 ```text
