@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "e01b1254-de73-4aaf-8b76-7de3b1ba5fd1",
+		"name": "armal api project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "44949886"
+	},
+	"item": [
+		{
+			"name": "Create Form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "localhost:8080/form/create"
+			},
+			"response": []
+		},
+		{
+			"name": "Save Personal Details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"formId\":23,\r\n    \"firstName\": \"Peter\",\r\n    \"lastName\": \"Parker\",\r\n    \"email\": \"pp@test.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/form/save/personal-details"
+			},
+			"response": []
+		},
+		{
+			"name": "Save Address",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Form",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "View Address",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": ""
+			},
+			"response": []
+		},
+		{
+			"name": "View Personal Details",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "View Form",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": {
+			"password": "P@$sW0rD",
+			"username": "apiuser"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
